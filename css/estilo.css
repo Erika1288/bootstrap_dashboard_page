@@ -1,0 +1,46 @@
+.contenedor{
+    height: 100vh;
+}
+
+.cabecera{
+    height: 100px;
+}
+.menu{
+    min-width: 200px;
+    height: 400px;
+}
+.menu2{
+    min-width: 167px;
+    height: 100px;
+}
+.cuerpo{
+    min-width:510px;
+}
+.elemento img{
+    width: 80px;
+    height: 80px;
+}
+.offcanvas{
+    position: none;
+}
+.callout-primary {
+    border-left-width: 6px;
+    border-left-color: #428bca;
+    text-align: center;
+    align-items: center;
+}
+.callout-success {
+   border-left-width: 6px;
+   border-left-color: #1cc88a;
+   text-align: center;
+    align-items: center;
+}
+.callout-info {
+   border-left-width: 6px;
+   border-left-color: #36b9cc;
+   text-align: center;
+    align-items: center;
+}
+i {
+    font-size: 20px;
+}

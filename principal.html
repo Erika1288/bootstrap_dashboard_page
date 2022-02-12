@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container contenedor">
+        <div class="d-flex">
+            <!--MENU PARA PANTALLA MOVIL-->
+            <div class="col-1 d-lg-none menu2">
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas position-relative" id="offcanvasNavbar">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title">
+                                    MI TIENDA ONLINE
+                                </h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Usuarios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Graficos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Informes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Cerrar sesi&oacute;n</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--CABECERA-->
+            <div class="col cabecera">
+                <h2 class="my-3 justify-content-center d-flex">
+                    Dashboard
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <!--MENU PRINCIPAL:Rehacer el menú. Se puede hacer un menú al principio de la página o crear un nuevo
+                               menú que aparece y desaparece de la página.-->
+            <div class="col-1 d-none d-lg-block menu">
+                <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold">
+                    MI TIENDA OUTLET
+                </div>
+                <div class="list-group list-group-flush my-3">
+                    <!--Las opciones del menú deberán tener un icono relacionado con la opción del menú
+                        correspondiente-->
+                    <a href="#" class="list-group-item list-group-item-action bg-primary second-text active">
+                        <i class="fa-solid fa-table-columns"></i> Dashboard </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-user"></i> Usuarios </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-box-open"></i> Productos </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-chart-column"></i> Graficos </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-folder"></i> Informes </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión </a>
+                </div>
+            </div>
+            <!--CUERPO-->
+            <div class="col cuerpo">
+                <div class="row container-fluid">
+                    <div class="col card shadow m-3 callout-info">
+                        <div class="card-body">
+                            <p class="fw-bold text-info"> INGRESOS (Anual)</p>
+                            <h3>1300,00 €</h3>
+                        </div>
+                    </div>
+                    <div class="col card shadow m-3 callout-primary">
+                        <div class="card-body">
+                            <p class="fw-bold text-primary">GASTOS (Anual)</p>
+                            <h3>1000,00 €</h3>
+                        </div>
+                    </div>
+                    <div class="col card shadow m-3 callout-success">
+                        <div class="card-body">
+                            <p class="fw-bold text-success">BENEFICIOS (Anual)</p>
+                            <h3>300,00 €</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--ARTÍCULOS:No debe aparecer un scroll horizontal para ver la tabla por lo tanto se recomienda
+                    cambiar del formato tabla a “otra cosa”-->
+                <div class="row">
+                    <div class="col elemento">
+                        <div class="container-fluid row row-cols-1 row-cols-md-2 g-4">
+                            <!--ARTÍCULO 1-->
+                            <div class="col">
+                                <div class="card flex-row">
+                                    <div class="align-self-md-center p-4">
+                                        <img src="./img/xiaomi.png" alt="Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title ">
+                                            Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical
+                                        </h5>
+                                        <p class="card-text ">
+                                            <b>VENTAS:</b> 1232<br>
+                                            <b>CÓDIGO:</b> 299423<br>
+                                            <b>PRECIO UNIDAD:</b> 250,25 €.
+                                        </p>
+                                        <span class="btn btn-primary rounded-pill">
+                                            Smartphone
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--ARTÍCULO 2-->
+                            <div class="col">
+                                <div class="card flex-row">
+                                    <div class="align-self-md-center p-4">
+                                        <img src="./img/torre.png" alt="Tempest Vapor USB 3.0 Ventana RGB Negro">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">
+                                            Tempest Vapor USB 3.0 Ventana RGB Negro
+                                        </h5>
+                                        <p class="card-text">
+                                            <b>VENTAS:</b> 425<br>
+                                            <b>CÓDIGO:</b> 386825<br>
+                                            <b>PRECIO UNIDAD:</b> 56,99 €.
+                                        </p>
+                                        <span class="btn btn-primary rounded-pill">
+                                            Componentes
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--ARTÍCULO 3-->
+                            <div class="col">
+                                <div class="card flex-row">
+                                    <div class="align-self-md-center p-4">
+                                        <img src="./img/mouse.png" alt="Tempest X20W Vigilant Raton Gaming Inalámbrico">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">
+                                            Tempest X20W Vigilant Raton Gaming Inalámbrico
+                                        </h5>
+                                        <p class="card-text">
+                                            <b>VENTAS:</b> 855<br>
+                                            <b>CÓDIGO:</b> 433507<br>
+                                            <b>PRECIO UNIDAD:</b> 49,99 €.
+                                        </p>
+                                        <span class="btn btn-primary rounded-pill">
+                                            Periféricos
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--ARTÍCULO 4-->
+                            <div class="col">
+                                <div class="card flex-row">
+                                    <div class="align-self-md-center p-4">
+                                        <img src="./img/webcam.png" alt="Logitech C920s Pro Webcam">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">
+                                            Logitech C920s Pro Webcam
+                                        </h5>
+                                        <p class="card-text">
+                                            <b>VENTAS:</b> 711<br>
+                                            <b>CÓDIGO:</b> 258324<br>
+                                            <b>PRECIO UNIDAD:</b> 75,99 €.
+                                        </p>
+                                        <span class="btn btn-primary rounded-pill">
+                                            Periféricos
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--ARTÍCULO 5-->
+                            <div class="col">
+                                <div class="card flex-row">
+                                    <div class="align-self-md-center p-4">
+                                        <img src="./img/pantalla.png"
+                                             alt="NewSkill Icarus RGB 27 LED Fast IPS QHD 180Hz G-Sync Compatible">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">
+                                            NewSkill Icarus RGB 27" LED Fast IPS QHD 180Hz G-Sync Compatible
+                                        </h5>
+                                        <p class="card-text">
+                                            <b>VENTAS:</b>1000<br>
+                                            <b>CÓDIGO:</b> 414013<br>
+                                            <b>PRECIO UNIDAD:</b> 343,98 €.
+                                        </p>
+                                        <span class="btn btn-primary rounded-pill">
+                                            Monitores
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
